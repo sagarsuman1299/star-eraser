@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Eraser</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" width="36" height="36">
+    <div>
+      <h1>Star Eraser</h1>
+      <p class="sub">Removes the sparkle mark from the corner of your Gemini images. Everything happens on your computer — nothing is uploaded.</p>
+    </div>
+  </header>
+
+  <main>
+    <label id="drop" class="drop" tabindex="0">
+      <input id="file" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden>
+      <div class="drop-big">Drop images here</div>
+      <div class="drop-small">or click to choose · PNG, JPG, WEBP · many at once</div>
+    </label>
+
+    <div id="bar" class="bar" hidden>
+      <span id="summary"></span>
+      <span class="spacer"></span>
+      <button id="clear" class="ghost">Clear</button>
+      <button id="all">Download all</button>
+    </div>
+
+    <ul id="list" class="list"></ul>
+  </main>
+
+  <footer>
+    Free and open. Works best on full-size downloads straight from Gemini (cropped or resized images may be skipped).
+    Removes only the visible mark; Google's invisible SynthID tag stays in the image.
+    <a href="NOTICE.txt" target="_blank">Credits &amp; licences</a>
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
